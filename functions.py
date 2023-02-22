@@ -1,7 +1,9 @@
-def f(imie, nazwisko):
-    return f"witaj {imie} {nazwisko}"
+def fun(thing):
+    if type(thing) in [tuple,list,bytes,str]:
+        print("Wprowadzony parametr jest obiektem iterowalnym")
+    elif type(thing) in [complex,float,int]:
+        print("Wprowadzony parametr jest typu liczbowego")
 
-imie = input("Podaj imie ")
-nazwisko = input("Podaj nazwisko ")
 
-print(f(imie,nazwisko))
+fun(1)
+
