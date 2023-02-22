@@ -29,3 +29,13 @@ primes=[nums1,nums2,nums3]
 for prime in primes:
     for k,v in prime.items():
         print(f"klucz to {k}, jego wartość to {v}")
+
+
+nicks={"susan1":[1,2,3],
+       "johny12":[2,4,4,3],
+       "beth22":[2,1,4,5]}
+
+for nick, nums in nicks.items():
+    print(f"\nliczby użytkownika {nick.upper()} to: ", end="")
+    for n in nums:
+        print(n, end=" ")
