@@ -19,3 +19,13 @@ for v in nums.values():
 # Dzięki metodzie set() usuwam duplikat wartości
 for v in set(nums.values()):
     print(v)
+
+nums1 = {"prime":1, 'grater_than_100':False}
+nums2 = {"prime":31, 'grater_than_100':False}
+nums3 = {"prime":2311, 'grater_than_100':True}
+
+primes=[nums1,nums2,nums3]
+
+for prime in primes:
+    for k,v in prime.items():
+        print(f"klucz to {k}, jego wartość to {v}")
