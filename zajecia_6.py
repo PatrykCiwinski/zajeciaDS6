@@ -17,8 +17,8 @@ while True:
         print(tłumaczenie)
     elif what_lang == '1':
         what_color = input("what color do you want to translate ").lower().strip()
-        tłumaczenie = colors[what_color]
-        print(tłumaczenie)
+        translate = colors[what_color]
+        print(translate)
     next = input("czy kontynuować (t/n) ")
     if next =="n":
         break
